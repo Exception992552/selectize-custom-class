@@ -1,0 +1,49 @@
+.selectize-control.single .selectize-input,
+.selectize-control.single .selectize-input.items.has-options.full.has-items,
+.selectize-control.single .selectize-input.items.has-options.full.has-items.focus.input-active.dropdown-active,
+.selectize-control.single .selectize-input.items.not-full.has-options,
+.selectize-control.single .selectize-input.items{
+
+	input {
+		//For example
+			font-family:'Roboto-Light';
+			font-size: 18px;
+			transform:translateY(-33%);
+		//end
+			
+		}
+		outline: none;
+		box-shadow:none;
+
+	}
+.selectize-control.single .selectize-input.items.has-options.full.has-items.focus.input-active.dropdown-active {
+		padding: 0 0 12px 26px;
+		>input {
+			transform:translateY(0);
+			
+		}
+	}
+
+.selectize-control.single .selectize-input.focus {
+		box-shadow: none;
+	}
+.selectize-control.single {
+		.selectize-dropdown.single {
+			.selectize-dropdown-content {
+				.option.selected,.option {
+					font-family:'Roboto-Light';
+					font-size: 18px;
+					width: 100%;
+					padding: 14px 0 12px 26px;
+					&.active {
+							background-color: $accent;
+					}
+					&:hover {
+						transition:all 0.2s ease;
+						background-color: $accent;
+					}
+				}
+			
+			}
+		}
+	}
